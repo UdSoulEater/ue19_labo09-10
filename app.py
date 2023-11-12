@@ -8,3 +8,4 @@ def get_pun():
 if __name__ == "__main__":
     joke = get_pun()
     print(joke)
+#OK    
