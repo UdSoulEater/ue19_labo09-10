@@ -41,7 +41,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Scan for vulnerabilities with Trivy
-        uses: aquasecurity/trivy-action@v0.17.1
+        uses: aquasecurity/trivy-action@v1
         with:
           image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
