@@ -1,9 +1,9 @@
 import requests
 
 def get_pun():
-    response = requests.get('https://api.punapi.com/random')
+    response = requests.get('https://punapi.rest/api/pun')
     data = response.json()
-    return data['content']
+    return data['pun']
 
 if __name__ == "__main__":
     joke = get_pun()
